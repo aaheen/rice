@@ -1,7 +1,5 @@
 # Set up GNOME shell user theme extension
-gnome-extensions install user-theme@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-
 
 # Set up Orchis
 cd gtk/Orchis
@@ -9,7 +7,7 @@ git pull
 
 # Install script 
 chmod +x install.sh
-./install.sh -t nord -s compact --tweaks nord -l
+./install.sh -t default -s compact --tweaks nord -l
 
 # Set GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme Orchis-Compact-Nord
