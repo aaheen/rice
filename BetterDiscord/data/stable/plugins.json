@@ -1,0 +1,15 @@
+{
+    "BDFDB": true,
+    "ZeresPluginLibrary": true,
+    "BetterFolders": true,
+    "CharCounter": true,
+    "CollapseEmbeds": true,
+    "DoNotTrack": true,
+    "ImageUtilities": true,
+    "SplitLargeMessages": true,
+    "StaffTag": true,
+    "GameActivityToggle": true,
+    "TypingIndicator": true,
+    "BugReportHelper": false,
+    "BetterAnimations": true
+}

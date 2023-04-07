@@ -1,0 +1,13 @@
+{
+    "version": "1.9.1",
+    "addonlistControls": {
+        "theme": {
+            "view": "list"
+        }
+    },
+    "drawerStates": {
+        "settings": {
+            "addons": false
+        }
+    }
+}
