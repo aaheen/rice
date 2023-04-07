@@ -1,0 +1,6 @@
+[submodule "gtk/Orchis"]
+	path = gtk/Orchis
+	url = https://github.com/vinceliuice/Orchis-theme
+[submodule "cursors/Nordzy"]
+	path = cursors/Nordzy
+	url = https://github.com/alvatip/Nordzy-cursors
