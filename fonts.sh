@@ -22,13 +22,13 @@ cd ..
 rm -r fc
 
 # Refresh font cache
-fc-cache -f
+fc-cache -fv
 
 # Set GNOME variables
 #gsettings set org.gnome.desktop.wm.preferences titlebar-uses-system-font true
-gsettings set 'org.gnome.destkop.interface' font-hinting 'full' && \
-gsettings set 'org.gnome.desktop.wm.preferences' titlebar-font 'Open Sans Bold 11' && \
-gsettings set 'org.gnome.desktop.interface' font-name 'Open Sans 11' && \
-gsettings set 'org.gnome.desktop.interface' monospace-font-name 'Mononoki Nerd Font 11' && \
-gsettings set 'org.gnome.desktop.interface' document-font-name 'Crimson Pro 12'
+gsettings set org.gnome.destkop.interface font-hinting 'full'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Open Sans Bold 11'
+gsettings set org.gnome.desktop.interface font-name 'Open Sans 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font 11'
+gsettings set org.gnome.desktop.interface document-font-name 'Crimson Pro 12'
 

@@ -1,29 +1,44 @@
-### Basic setup ###
-# Set up GNOME shell user theme extension
-gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-
-# Set up submodules
-git submodule init
-git submodule update
-
-
-### GNOME shell theme ###
-# Install Orchis
-chmod +x ./gtk/Orchis/install.sh
-./gtk/Orchis/install.sh -t default -c standard dark -s compact --tweaks nord -l
-
-# Set GTK theme
-gsettings set org.gnome.desktop.interface gtk-theme Orchis-Compact-Nord
-gsettings set org.fedorahosted.background-logo-extension logo-always-visible false
-
-### Cursors ###
-# Set up Nordzy cursor theme
-chmod +x ./cursors/Nordzy/install.sh
-# ./cursors/Nordzy/install.sh
-cd cursors/Nordzy
+### Initial install ###
+chmod +x install.sh
 ./install.sh
-cd ../..
 
-# Set cursor theme
-gsettings set org.gnome.desktop.interface cursor-theme Nordzy-cursors
+sudo echo "Authenticated sudo"
 
+#######################
+
+### Fonts ###
+./fonts.sh
+
+
+### BetterDiscord ###
+mkdir ~/.config/BetterDiscord
+mkdir ~/.config/BetterDiscord/themes
+mkdir ~/.config/BetterDiscord/plugins
+
+cp -u ./BetterDiscord/themes/* ~/.config/BetterDiscord/themes/
+cp -u ./BetterDiscord/plugins/* ~/.config/BetterDiscord/plugins/
+
+
+### Neovim ###
+cp -ru ./nvim ~/.config/ 
+
+# See https://github.com/wbthomason/packer.nvim for more info on this section
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+echo "vim.cmd [[colorscheme nord]]" >> ~/.config/nvim/init.lua
+
+### Fish ###
+fish ./fish.fish 
+
+
+### Firefox ###
+#firefox ./firefox/themes/minimalist-nord.xpi --new-instance &
+#firefox-developer ./firefox/themes/minimalist-nord.xpi --new-instance &
+#firefox-nightly ./firefox/themes/minimalist-nord.xpi --new-instance &
+
+
+#######################
+echo "Installation complete."
