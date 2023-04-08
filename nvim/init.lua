@@ -11,7 +11,7 @@ vim.cmd([[
 
 
 -- Themes
-vim.cmd [[colorscheme nord]]
+-- vim.cmd [[colorscheme nord]]
 --vim.cmd [[hi Normal ctermbg=none guibg=none]]
 vim.cmd [[hi NonText ctermbg=none]]
 --vim.cmd [[hi LineNr ctermbg=none guibg=none]]

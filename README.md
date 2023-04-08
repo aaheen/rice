@@ -30,6 +30,9 @@ The bulk of the customizations come from [Vince's](https://vinceliuice.github.io
 **Cursors**
 Cursors are the [Nordzy cursors](https://github.com/alvatip/Nordzy-cursors) by [alvatip](https://github.com/alvatip).
 
+**Firefox**
+Firefox theme is [Minimalist Nord](https://github.com/canbeardig/MinimalistFox) by [Hakan](https://github.com/canbeardig).
+
 
 ## Installation
 
@@ -43,6 +46,13 @@ I've included `install.sh` to do a few things, it's pretty human-readable but js
 
 > 2023-04-07 At the time of writing this, I think the orchis installer is bugged because it doesn't recognize `nord` as a variant, despite listing it in the output of `--help`. Try editing install.sh if/when this gets resolved.
 
+### Firefox
+
+To install the firefox theme, you can go to the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/minimalist-nord/), or simply run
+
+```
+firefox ./firefox/themes/minimalist-nord.xpi ./firefox/themes/manifest.json --new-instance
+```
 
 ### Fonts
 
