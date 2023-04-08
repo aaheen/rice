@@ -10,11 +10,11 @@ git submodule update
 ### GNOME shell theme ###
 # Install Orchis
 chmod +x ./gtk/Orchis/install.sh
-./gtk/Orchis/install.sh -t default -c standard -s compact --tweaks nord -l
+./gtk/Orchis/install.sh -t default -c standard dark -s compact --tweaks nord -l
 
 # Set GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme Orchis-Compact-Nord
-
+gsettings set org.fedorahosted.background-logo-extension logo-always-visible false
 
 ### Cursors ###
 # Set up Nordzy cursor theme
