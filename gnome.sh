@@ -1,7 +1,7 @@
 ### GNOME shell extensions ###
 gnome-extensions install \
 	https://extensions.gnome.org/extension-data/user-themegnome-shell-extensions.gcampax.github.com.v50.shell-extension.zip
-gnome-extensions install \ 
+gnome-extensions install \
 	https://extensions.gnome.org/extension-data/caffeinepatapon.info.v46.shell-extension.zip
 gnome-extensions install \
 	https://extensions.gnome.org/extension-data/rounded-window-cornersyilozt.v11.shell-extension.zip
@@ -24,7 +24,7 @@ git submodule update
 ### GNOME shell theme ###
 # Install Orchis
 chmod +x ./gtk/Orchis/install.sh
-./gtk/Orchis/install.sh -t default -c standard dark -s compact --tweaks nord -l
+./gtk/Orchis/install.sh -t default -c standard -s compact --tweaks nord -l
 
 # Set GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme Orchis-Compact-Nord
