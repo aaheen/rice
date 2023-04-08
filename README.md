@@ -9,12 +9,12 @@ I'm using Fedora 37, so I'm not 100% sure if all of the commands I'm using trans
 
 My preference towards fonts changes with time, but currently I use
 
-| Use / Alias 		| Font name		| Source															|
-| ---				| ---			| ---																|
-| monospace			| Mononoki		| [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/)	|
-| sans-serif		| Open Sans		| [Google Fonts](https://fonts.google.com/specimen/Open+Sans)		|
-| Obsidian (sans)	| Overpass		| [Google Fonts](https://fonts.google.com/specimen/Overpass)		|
-| serif				| Crimson Pro	| [Google Fonts](https://fonts.google.com/specimen/Crimson+Pro)		|
+| Use / Alias 	  | Font name		| Source                                                          |
+| ---             | ---         | ---                                                             |
+| monospace       | Mononoki		| [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/)	|
+| sans-serif      | Open Sans		| [Google Fonts](https://fonts.google.com/specimen/Open+Sans)		  |
+| Obsidian (sans) | Overpass		| [Google Fonts](https://fonts.google.com/specimen/Overpass)		  |
+| serif           | Crimson Pro	| [Google Fonts](https://fonts.google.com/specimen/Crimson+Pro)		|
 
 > Nerd Fonts are named "$FONT Nerd Font", or some variation, so you may need to experiment a little.
 > FYI you can do `$ fc-list | grep mononoki` to get the actual name(s) for Mononoki within the system.
@@ -44,7 +44,7 @@ I've included `install.sh` to do a few things, it's pretty human-readable but js
 - runs the Nordzy `install.sh` file 
 - enables the `Nordzy-cursors` cursor theme with gsettings.
 
-> 2023-04-07 At the time of writing this, I think the orchis installer is bugged because it doesn't recognize `nord` as a variant, despite listing it in the output of `--help`. Try editing install.sh if/when this gets resolved.
+> 2023-04-07 At the time of writing this, I think the orchis installer is bugged because it doesn't recognize `nord` as a variant, despite listing it in the output of `--help`. Try editing `install.sh` if/when this gets resolved.
 
 ### Firefox
 
@@ -59,9 +59,9 @@ firefox ./firefox/themes/minimalist-nord.xpi ./firefox/themes/manifest.json --ne
 > I have yet to write a script that downloads, installs, and sets my fonts for me; I'll get to it at some point.
 
 
-## pullrice & pushrice
+## Other scripts
 
-These scripts are included for my own use, **they will not work on your system** without at least setting the $RICE variable to the location of this repo.
+They are included for my own use, **expect that they will not work on your system** without some tinkering. `install-full.sh` is rather cursed in particular, you have been warned.
 
 
 ## Contact me
