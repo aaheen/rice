@@ -1,29 +1,29 @@
+### Basic setup ###
 # Set up GNOME shell user theme extension
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
-# Set up Orchis
-cd gtk/Orchis
-git pull
+# Set up submodules
+git submodule init
+git submodule update
 
-# Install script 
-chmod +x install.sh
-./install.sh -t default -s compact --tweaks nord -l
+
+### GNOME shell theme ###
+# Install Orchis
+chmod +x ./gtk/Orchis/install.sh
+./gtk/Orchis/install.sh -t default -c standard -s compact --tweaks nord -l
 
 # Set GTK theme
 gsettings set org.gnome.desktop.interface gtk-theme Orchis-Compact-Nord
 
-# Return to repo root 
-cd ../..
 
-
+### Cursors ###
 # Set up Nordzy cursor theme
+chmod +x ./cursors/Nordzy/install.sh
+# ./cursors/Nordzy/install.sh
 cd cursors/Nordzy
-chmod +x install.sh
 ./install.sh
+cd ../..
 
 # Set cursor theme
 gsettings set org.gnome.desktop.interface cursor-theme Nordzy-cursors
-
-# Return to repo root
-cd ../..
 
