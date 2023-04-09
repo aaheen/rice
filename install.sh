@@ -9,10 +9,12 @@ sudo echo "Authenticated sudo"
 ### Fonts ###
 ./fonts.sh
 
+
 ### Typora themes ###
 mkdir ~/.config/Typora
 mkdir ~/.config/Typora/themes
 cp -ru ./Typora/themes/* ~/.config/Typora/themes/
+
 
 ### BetterDiscord ###
 mkdir ~/.config/BetterDiscord
@@ -33,6 +35,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 echo "vim.cmd [[colorscheme nord]]" >> ~/.config/nvim/init.lua
+
 
 ### Fish ###
 fish ./fish.fish 
