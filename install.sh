@@ -9,6 +9,10 @@ sudo echo "Authenticated sudo"
 ### Fonts ###
 ./fonts.sh
 
+### Typora themes ###
+mkdir ~/.config/Typora
+mkdir ~/.config/Typora/themes
+cp -ru ./Typora/themes/* ~/.config/Typora/themes/
 
 ### BetterDiscord ###
 mkdir ~/.config/BetterDiscord
