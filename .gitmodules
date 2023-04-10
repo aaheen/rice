@@ -4,3 +4,6 @@
 [submodule "cursors/Nordzy"]
 	path = cursors/Nordzy
 	url = https://github.com/alvatip/Nordzy-cursors
+[submodule "dots"]
+	path = dots
+	url = https://github.com/eaheen/dotfiles
