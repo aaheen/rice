@@ -55,5 +55,3 @@ cd ../..
 gsettings set org.gnome.desktop.interface cursor-theme Nordzy-cursors-white
 
 
-# Other GTK settings
-gsettings set org.gnome.login-screen disable-user-list true
