@@ -37,8 +37,8 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 echo "vim.cmd [[colorscheme nord]]" >> ~/.config/nvim/init.lua
 
 
-### Fish ###
-fish ./fish.fish 
+# theme.sh
+sudo curl -Lo /usr/bin/theme.sh 'https://git.io/JM70M' && sudo chmod +x /usr/bin/theme.sh
 
 
 ### Firefox ###
