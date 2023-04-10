@@ -2,9 +2,20 @@
 chmod +x install.sh
 ./install.sh
 
-sudo echo "Authenticated sudo"
-
 #######################
+
+### BetterDiscord ###
+mkdir ~/.config/BetterDiscord
+mkdir ~/.config/BetterDiscord/themes
+mkdir ~/.config/BetterDiscord/plugins
+
+cp -u ./BetterDiscord/themes/* ~/.config/BetterDiscord/themes/
+cp -u ./BetterDiscord/plugins/* ~/.config/BetterDiscord/plugins/
+
+
+### Fish ###
+./fishy.fish
+
 
 ### Fonts ###
 ./fonts.sh
@@ -16,13 +27,7 @@ mkdir ~/.config/Typora/themes
 cp -ru ./Typora/themes/* ~/.config/Typora/themes/
 
 
-### BetterDiscord ###
-mkdir ~/.config/BetterDiscord
-mkdir ~/.config/BetterDiscord/themes
-mkdir ~/.config/BetterDiscord/plugins
 
-cp -u ./BetterDiscord/themes/* ~/.config/BetterDiscord/themes/
-cp -u ./BetterDiscord/plugins/* ~/.config/BetterDiscord/plugins/
 
 
 ### Neovim ###
@@ -37,8 +42,8 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 echo "vim.cmd [[colorscheme nord]]" >> ~/.config/nvim/init.lua
 
 
-### Fish ###
-fish ./fish.fish 
+# theme.sh
+sudo curl -Lo /usr/bin/theme.sh 'https://git.io/JM70M' && sudo chmod +x /usr/bin/theme.sh
 
 
 ### Firefox ###
