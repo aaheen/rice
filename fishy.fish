@@ -1,5 +1,6 @@
-### Fish ###
 #!/usr/bin/fish
+
+cp ./fish/config.fish ~/.config/fish/config.fish
 
 # fisher plugin manager
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
